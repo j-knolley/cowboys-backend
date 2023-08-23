@@ -11,10 +11,10 @@ app.use(express.json());
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Welcome to Dallas Cowboys!");
+  res.send("Welcome to NFL Stat Tracker!");
 });
 
-// COWBOYS ROUTES
+// NFL ROUTES
 const playersController = require("./controllers/playersController.js");
 app.use("/players", playersController);
 

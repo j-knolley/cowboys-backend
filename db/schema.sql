@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS cowboys;
-CREATE DATABASE cowboys;
+DROP DATABASE IF EXISTS nfl;
+CREATE DATABASE nfl;
 
-\c cowboys
+\c nfl
 
 DROP TABLE IF EXISTS players;
 
@@ -10,5 +10,11 @@ CREATE TABLE players (
     name TEXT NOT NULL,
     position TEXT NOT NULL,
     player_number NUMERIC,
-    year_joined NUMERIC
+    year_joined NUMERIC,
+    total_yards NUMERIC,
+    touchdowns NUMERIC,
+    attempts NUMERIC,
+    long NUMERIC,
+    completions NUMERIC,
+    opponent TEXT
 );
