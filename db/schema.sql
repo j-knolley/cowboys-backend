@@ -10,7 +10,7 @@ CREATE TABLE players (
     name TEXT NOT NULL,
     position TEXT NOT NULL,
     player_number NUMERIC,
-    year_joined NUMERIC,
+    team TEXT,
     total_yards NUMERIC,
     touchdowns NUMERIC,
     attempts NUMERIC,
